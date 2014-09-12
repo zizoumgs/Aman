@@ -1,0 +1,12 @@
+# program ini memakai cmake sebagai compiler , dan tidak memakai pkg-config
+#mengingat sangat kakunya program pkg-config
+# berikut adalah llangkah-langkah untuk mengcompile program ini
+# this program requires libs below
+# sudo apt-get install libnotify-dev
+# sudo apt-get install libunique-dev
+# sudo apt-get install sqlite3 libsqlite3-dev
+# sudo apt-get install gstreamer-0.10
+# sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+cd build
+cmake ..
+make

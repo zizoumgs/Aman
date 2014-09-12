@@ -1,0 +1,16 @@
+style "default-style"
+{
+        # modify the x/ythickness, used for spacing all over the place
+        xthickness = 3
+        ythickness = 3
+
+        # one can set so called "style properties"
+        GtkRange::slider-width = 15
+
+        # set the background to a light grey
+        bg[NORMAL] = "#f6f6f6"
+        # and the forground to black
+        fg[NORMAL] = "#000000"
+}
+
+class "GtkWidget" style "default-style"

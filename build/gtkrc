@@ -1,0 +1,66 @@
+style "default"
+{
+#	font = "-adobe-helvetica-medium-r-normal--*-120-*-*-*-*-*-*"
+	engine "clearlooks" {
+	}
+}
+style "Jubek"{
+    # modify the x/ythickness, used for spacing all over the place
+    xthickness = 10
+    ythickness = 10
+
+    # one can set so called "style properties"
+    GtkRange::slider-width = 15
+
+    # set the background to a light grey
+    bg[NORMAL] = "#f6f6f6"
+    # and the forground to black
+    fg[NORMAL] = "#000000"
+                
+	GtkTreeView::grid-line-pattern = "\111\001"	
+	#GtkTreeView::grid-line-pattern = "\111\111"
+
+	#to change the color of each line even/odd
+	GtkTreeView::allow-rules = 1
+	GtkTreeView::odd-row-color 		= "white"
+	GtkTreeView::even-row-color  	= "#f6f6f6"
+	GtkTreeView::tree-line-width = 5
+	GtkTreeView::grid-line-width = 1
+}
+##################
+#      GTK       #
+##################
+
+#include "/usr/share/themes/Clearlooks/gtk-2.0/gtkrc"
+#include "/usr/share/themes/Ambiance/gtk-2.0/gtkrc"
+gtk-menu-images= 1
+gtk-button-images= 1
+
+style "menu" {
+}
+##################
+#     FONTS      #
+##################
+
+style "schrift"
+{
+	font_name = "DejaVu Sans 10"
+}
+widget_class "*" style "schrift"
+gtk-font-name = "Myriad Web 9"
+
+
+##################
+#     ICONS      #
+##################
+
+gtk-icon-theme-name = "Crashbit"
+
+
+##################
+#    TOOLBARS    #
+##################
+
+gtk-toolbar-style   = GTK_TOOLBAR_ICONS
+class "GtkWidget" style "default"
+
